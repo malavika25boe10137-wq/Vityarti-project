@@ -52,4 +52,4 @@ Enter less than 50 or greater than 120 to trigger a critical pulse alert.
 Enter between 50 and 120 for a normal pulse.
 
 Observe outputs to verify correct alert logic (Fall Confirmed, Critical Pulse Alert, Pulse Normal, etc.).
-<img width="561" height="641" alt="image" src="https://github.com/user-attachments/assets/1cc9f990-e2df-4295-95a4-b48ad58dfd97" />
+
