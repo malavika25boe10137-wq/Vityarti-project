@@ -1,0 +1,26 @@
+# --- Constants ---
+FALL_G = 2.5
+STILL_G = 0.2
+PULSE_LOW = 50
+PULSE_HIGH = 120
+
+# --- Simple Fall + Pulse Check ---
+g = float(input("Enter G-force: "))
+
+if g > FALL_G:
+    print("Impact detected!")
+    
+    still = float(input("Enter stillness G-force: "))
+    if still < STILL_G:
+        print(" Fall Confirmed!")
+        
+        bpm = int(input("Enter Heart Rate: "))
+        if bpm < PULSE_LOW or bpm > PULSE_HIGH:
+            print(" Critical Pulse Alert!")
+        else:
+            print(" Pulse Normal")
+    else:
+        print("No Fall. Patient moved.")
+
+else:
+    print("Normal Activity")
